@@ -1,1 +1,4 @@
-
+/my first "Hola mundo" in php/
+<?php
+echo "¡Hola, mundo!";
+?>
