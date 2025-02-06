@@ -2,3 +2,32 @@
 <?php
 echo "¡Hola, mundo!";
 ?>
+
+/We can use either echo or print/
+/echo can shows one or more strings/
+/print shows one string/
+
+<?php
+print "hola mundo";
+print "hola" . "mundo";
+?>
+
+
+/************/
+/including external files/
+/include()/
+/require()/
+/Both include and evaluate the specified file./
+
+/In case of error include() produces a warning and required() a fatal error/
+/required() will be used whenever an error is produced and we must interrupt the page loading/
+
+/For variables $ goes in front/
+/The name is case sensitive/
+/They start by letters and underscore, followed by letters, numbers and underscore/
+
+/pre-defined variables /
+/$GLOBALS, $_SERVER, $_GET, $_POST, $_COOKIES, $_FILES, $_ENV, $_REQUEST, $_SESSION/
+
+/ambito: globales al fichero (excepto por funciones) o locales a una función/
+
