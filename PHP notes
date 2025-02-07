@@ -31,3 +31,31 @@ print "hola" . "mundo";
 
 /ambito: globales al fichero (excepto por funciones) o locales a una función/
 
+/*******************/
+<?php
+$dato1 = 15;
+$dato2 = 20;
+
+echo "El valor de las variables es: ";
+echo "<br>";
+echo $dato1
+echo "<br>";
+echo $dato2;
+echo "<br>"
+?>
+
+/*************/
+<?
+$valor = 5;
+print 'El valor es: ' . $valor . '\n';
+print 'El valor es: $valor\n'; //Ojo con comillas dobles
+?>
+
+
+/Constants/
+<?
+define ("CONSTANT", "HI");
+print CONSTANT
+?>
+
+/Solo se pueden definir constantes de los tipos escalares (boolean, integer, double, string)/
