@@ -59,3 +59,35 @@ print CONSTANT
 ?>
 
 /Solo se pueden definir constantes de los tipos escalares (boolean, integer, double, string)/
+
+/Solo se pueden definir constantes de los tipos escalares (boolean, integer, double, string)/
+
+/Control structures/
+if - else
+while
+do . while
+For
+foreach
+switch
+
+/*****************/
+<?php
+$dato1 = 15;
+$dato2 = 20;
+
+echo "El valor de las variables es: ";
+echo "<br>";
+echo $dato1
+echo "<br>";
+echo $dato2;
+echo "<br>"
+
+
+
+
+
+
+
+
+
+
