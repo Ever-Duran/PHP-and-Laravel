@@ -96,7 +96,118 @@ else {
 
 
 
+/loop/
+$valor = rand(1,100);
+$contador = 1;
+while ($contador <= $valor)
+{
+echo $contador;
+echo "<br>";
+$contador++;	
+}
 
+/FUNCTIONS/
+<?
+/2 references/
+function showname ($title = "Mr")
+{
+	print "Dear $title: \n";
+}
+showname ();
+showname ("Professor");
+
+?>
+/Output/
+/Dear Mr/
+/Dear Professor/
+
+
+/customized values go first and default values afterwards/
+<?
+/2 references/
+function showname ($name, $title = "Mr")
+{
+	print "Dear $title $name: \n";
+}
+showname ("Fernandez");
+showname ("Fernandez", "Professor");
+
+?>
+/Output/
+/Dear Mr Fernandez/
+/Dear Professor Hernandez/
+
+
+/TABLES/
+<?
+/2 references/
+array ([key =>] value, ... )
+
+?>
+
+/A key is a string or a no negative integer. The value can be any kind of valid value on PHP, including another array/
+
+
+<?
+$color = array  ('rojo' => 101, 'verde' => 51, 'azul' => 255);
+>$meassurements = array (10, 25, 15);
+?>
+
+<?
+$color['rojo'];
+$meassurements [0];
+
+?>
+
+/FORMULARIOS/
+<html>
+<body>
+	<Form action = "dos.php" method = "post">
+		Edad: <input type = "text" name = "edad">
+		<input type = "submit" value = "aceptar">
+	</form>
+</body>
+</html>
+
+
+<html>
+<body>
+	<?php
+	print("La edad es: $edad");
+	?>
+
+</body>
+</html>
+
+/To find out if it was sent to the form we use the variable which corresponds to the send button/
+/If this button shows this way on the HTML form:/
+<input type = "submit" name = "enviar" value = "procesar">
+
+/Then the prior condition becomes: /
+if (isset($enviar))
+	
+
+if ($enviar === "procesar")
+
+
+/Classes/
+/index.php/
+<?php
+require 'Person.php';
+
+$person = new Person;
+$person -> name;
+
+?>
+
+<?php 
+class Person
+{
+	var $name;
+	ver $lastname;
+}
+
+?>
 
 
 
